@@ -7,8 +7,8 @@ var foodStock,foodS;
 function preload()
 {
   //load images here
-  dogImg=loadImage("images/dogImg.png");
-  dogImg=loadImage("images/dogImg1.png");
+  dogImg=loadImage("images/Dog.png");
+  dogImg1=loadImage("images/happy dog.png");
 }
 
 function setup() {
@@ -32,9 +32,9 @@ background(46,139,87);
 
   if(keyWentDown(UP_ARROW)){
      writeStock(foodS);
-     dogImg.addImage(dogImg1);
+     dog.addImage(dogImg1);
   }
-  display();
+  drawSprites();
   fill(255,255,254);
   stroke("black");
   text("Food remaining : "+foodS,170,200);
